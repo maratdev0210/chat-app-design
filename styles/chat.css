@@ -6,7 +6,6 @@
 }
 
 .chat > * {
-    
     background-color: hsl(270, 20%, 96%);
 }
 
@@ -78,7 +77,6 @@
     background-color: hsl(276, 100%, 81%);
     margin-left: 15px;
     margin-bottom: 10px;
-   
     font-size: 1.1rem;
     border: none;
 }
@@ -87,7 +85,7 @@
     margin-bottom: 0px;
 }
 
-.dialog-left .first-option::before {
+.dialog-left .first-option::before, .dialog-left .second-option::before {
     content: "";
     display: inline-block;
     border: solid 1px white;
@@ -95,16 +93,6 @@
     width: 20px;
     height: 20px;
 }
-
-.dialog-left .second-option::before {
-    content: "";
-    display: inline-block;
-    border: solid 1px white;
-    border-radius: 50%;
-    width: 20px;
-    height: 20px;
-}
-
 
 .dialog-left .option {
     background: linear-gradient(90deg, hsl(264, 100%, 61%),
@@ -115,7 +103,6 @@
     width: 50%;
     padding: 15px;
 }
-
 
 .dialog-left .first-option, .dialog-left .second-option {
     display: flex;
@@ -219,11 +206,9 @@
     .island-section {
         width: 30vw;
         height: 20px;
-        background-color: white;
     }
         
     .dialog-left {
-        color: hsl(276, 55%, 52%);
         padding-top: 25px;
     }
     
@@ -232,45 +217,28 @@
     }
     
     .dialog-left .first-option::before {
-        content: "";
-        display: inline-block;
-        border: solid 1px white;
         border-radius: 50%;
         width: 20px;
         height: 20px;
     }
     
     .dialog-left .second-option::before {
-        content: "";
-        display: inline-block;
-        border: solid 1px white;
         border-radius: 50%;
         width: 20px;
         height: 20px;
     }
     
-    
     .dialog-left .option {
-        background: linear-gradient(90deg, hsl(264, 100%, 61%),
-         hsl(293, 100%, 63%));
-        color:  hsl(206, 6%, 79%);
-        margin-top: 0px;
-        margin-bottom: 10px;
-        width: 70%;
+        width: 75%;
         padding: 15px;
     }
-    
-    .dialog-left .first-option, .dialog-left .second-option {
-        display: flex;
-        justify-content: space-between;
-    }
-    
+
     .dialog-left .option span[class="price"] {
-        color: white;
         font-size: 1.2rem;
     }
     
     .dialog-left .option span[class="choice"] {
+        padding-left: 2px;
         font-size: 1.1rem;
     }
     
@@ -279,7 +247,6 @@
     }
     
     .dialog-right {
-        color: hsl(271, 15%, 43%);
         padding: 15px;
     }
     
@@ -294,18 +261,4 @@
     .dialog-right .pictures img {
         width: 15vw;
     }
-    
-    .message-box {
-        padding: 20px;
-        color: hsl(206, 6%, 79%);
-        font-size: 1.1rem;
-    }
-    
-    .message-box .input {
-        border: solid 1px black;
-        padding: 20px;
-        border-radius: 20px;
-        background-color: white;
-        border: none;
-    } 
 }
