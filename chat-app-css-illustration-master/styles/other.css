@@ -1,0 +1,8 @@
+.headline h1 {
+    color: hsl(271, 36%, 24%);
+}
+
+.headline p {
+    width: 70%;
+    color: hsl(270, 7%, 64%);
+}

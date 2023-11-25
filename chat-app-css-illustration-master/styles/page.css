@@ -1,0 +1,53 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(270, 20%, 96%);
+    margin: 0;
+}
+
+.headline {
+    width: 40%;
+    position: absolute;
+    left: 60%;
+    top: 50%;
+}
+
+.chat {
+    position: absolute;
+    top: 150px;
+    left: 20vw;
+    z-index: 1;
+    width: 25%;
+    border: none;
+}
+
+/*
+    STYLE THE BACKGROUND GRADIENT TO THE LEFT OF THE CHAT APP
+*/
+
+.gradient-background {
+    width: 25vw;
+    height: 90vh;
+    background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
+    border-bottom-left-radius: 45% 20%;
+    border-bottom-right-radius: 60% 35%;
+}
+
+/*
+    BACKGROUND GRADIENT STYLING FOR MOBILE DEVICES
+*/
+
+@media (max-width: 1250px) {
+    .gradient-background {
+        width: 50vw;
+        height: 80vh;
+        border-bottom-right-radius: 100% 30%;
+        border-bottom-left-radius: 0% 0%;
+    }
+    .chat {
+        width: 70%;
+    }
+}
